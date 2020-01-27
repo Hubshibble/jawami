@@ -7,7 +7,11 @@
     <title>Blue Template</title>
     <link href="https://fonts.googleapis.com/css?family=Oxygen:400,700|Arimo:400,700" rel="stylesheet">
     <link rel="stylesheet" href="dist/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </head>
 <body class="is-boxed has-animations">
     <div class="body-wrap boxed-container">
@@ -35,7 +39,7 @@
 	                        <h1 class="hero-title mt-0 is-revealing">Web and application development</h1>
 	                        <p class="hero-paragraph is-revealing">You need a website that has it all; the beauty and the brains.</p>
 	                        <p class="hero-cta mb-0 is-revealing">
-								<a class="button button-primary button-shadow" href="#">Request a free quote</a>
+								<button type="button" class="button button-primary button-shadow" data-toggle="modal" data-target="#staticBackdrop">Request a free quote</button>
 							</p>
 						</div>
 						<div class="hero-illustration">
@@ -151,7 +155,7 @@
 					<div class="cta-inner section-inner is-revealing">
 						<h3 class="section-title mt-0">Get in touch today for a free quote</h3>
 						<div class="cta-cta">
-							<a class="button button-primary button-shadow" href="#">Request a free quote</a>
+							<button type="button" class="button button-primary button-shadow" data-toggle="modal" data-target="#staticBackdrop">Request a free quote</button>
 						</div>
 					</div>
 				</div>
@@ -185,6 +189,27 @@
         </footer>
     </div>
 
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+            ...
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="button button-shadow" data-dismiss="modal">Close</button>
+            <button type="button" id="submitQuoteRequest" class="button button-primary button-shadow">Understood</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    
     <script src="dist/js/main.min.js"></script>
 </body>
 </html>
