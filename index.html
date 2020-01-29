@@ -194,17 +194,103 @@
         <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-            <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+            <h5 class="modal-title" id="staticBackdropLabel">Request Quote</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
             </button>
             </div>
             <div class="modal-body">
-            ...
-            </div>
-            <div class="modal-footer">
-            <button type="button" class="button button-shadow" data-dismiss="modal">Close</button>
-            <button type="button" id="submitQuoteRequest" class="button button-primary button-shadow">Understood</button>
+                <form id="contact-form" method="post" action="contact.php" role="form">
+                    <div class="messages"></div>
+                
+                    <div class="controls">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input id="form_name" type="text" name="name" class="form-control" placeholder="Firstname" required="required" data-error="Firstname is required.">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Lastname" required="required" data-error="Lastname is required.">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input id="form_email" type="email" name="email" class="form-control" placeholder="Email" required="required" data-error="Valid email is required.">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input id="form_email" type="number" name="phone" class="form-control" placeholder="Phone number">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <input id="form_name" type="text" name="name" class="form-control" placeholder="Company Name" required="required" data-error="Company name is required.">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Industry" required="required" data-error="Industry is required.">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="form_need">Interested in:</label>
+                                    <select id="form_need" name="need" class="form-control" required="required" data-error="Please specify your need.">
+                                        <option value=""></option>
+                                        <option value="Request copy of an invoice">Blog</option>
+                                        <option value="Request quotation">Web Site</option>
+                                        <option value="Request order status">Mobile App</option>
+                                        <option value="Request copy of an invoice">Ecommerce</option>
+                                        <option value="Request copy of an invoice">Full Stack Software</option>
+                                        <option value="Other">Other</option>
+                                    </select>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="form_need">Budget:</label>
+                                    <select id="form_budget" name="budget" class="form-control" required="required" data-error="Please specify your budget.">
+                                        <option value="">$1,500</option>
+                                        <option value="Request quotation">$4,000</option>
+                                        <option value="Request order status">$1,0000</option>
+                                        <option value="Request copy of an invoice">$2,0000</option>
+                                        <option value="Other">> $20000</option>
+                                    </select>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <textarea id="form_details" name="details" class="form-control" placeholder="Additional Details" rows="4" required="required" data-error="Please, leave us a message."></textarea>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="button button-shadow" data-dismiss="modal">Close</button>
+                        <button type="button" id="submitQuoteRequest" class="button button-primary button-shadow">Understood</button>
+                    </div>
+                </form>
             </div>
         </div>
         </div>
