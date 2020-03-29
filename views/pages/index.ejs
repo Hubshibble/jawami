@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Jawami</title>
     <link href="https://fonts.googleapis.com/css?family=Oxygen:400,700|Arimo:400,700" rel="stylesheet">
-    <link rel="stylesheet" href="dist/css/style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
@@ -16,7 +16,6 @@
 <body class="is-boxed has-animations">
     <div class="body-wrap boxed-container">
         <% include ../partials/header.ejs %>
-        
 
         <main>
             <section class="hero">
@@ -50,7 +49,7 @@
                             <div class="feature is-revealing">
                                 <div class="feature-inner">
                                     <div class="feature-icon">
-                                        <img src="dist/images/feature-icon-01.svg" alt="Feature 01">
+                                        <img src="/images/feature-icon-01.svg" alt="Feature 01">
                                     </div>
                                     <h4 class="feature-title">Web Sites</h4>
                                     <p class="text-sm">When you need a website, landing page, or anything in between.</p>
@@ -59,7 +58,7 @@
                             <div class="feature is-revealing">
                                 <div class="feature-inner">
                                     <div class="feature-icon">
-                                        <img src="dist/images/feature-icon-02.svg" alt="Feature 02">
+                                        <img src="/images/feature-icon-02.svg" alt="Feature 02">
                                     </div>
                                     <h4 class="feature-title">Mobile Apps</h4>
                                     <p class="text-sm">We have you covered for all things Android, iOS, and hybrid.</p>
@@ -68,7 +67,7 @@
                             <div class="feature is-revealing">
                                 <div class="feature-inner">
                                     <div class="feature-icon">
-                                        <img src="dist/images/feature-icon-04.svg" alt="Feature 04">
+                                        <img src="/images/feature-icon-04.svg" alt="Feature 04">
                                     </div>
                                     <h4 class="feature-title">Blog & Ecommerce</h4>
                                     <p class="text-sm">Supporting popular platforms like Wordpress, Magento, & more.</p>
@@ -77,7 +76,7 @@
                             <div class="feature is-revealing">
                                 <div class="feature-inner">
                                     <div class="feature-icon">
-                                        <img src="dist/images/feature-icon-03.svg" alt="Feature 03">
+                                        <img src="/images/feature-icon-03.svg" alt="Feature 03">
                                     </div>
                                     <h4 class="feature-title">Software</h4>
                                     <p class="text-sm">Full stack software development with all the bells & whitsles.</p>
@@ -100,19 +99,19 @@
 							<ul class="tabs-links">
 								<li class="is-revealing">
 									<a href="#tab-1" class="tab-link is-active">
-										<img src="dist/images/tabs-icon-01.svg" alt="Tabs icon 01">
+										<img src="/images/tabs-icon-01.svg" alt="Tabs icon 01">
 										<span class="h4 m-0">Discovery</span>
 									</a>
 								</li>
 								<li class="is-revealing">
 									<a href="#tab-2" class="tab-link">
-										<img src="dist/images/tabs-icon-02.svg" alt="Tabs icon 02">
+										<img src="/images/tabs-icon-02.svg" alt="Tabs icon 02">
 										<span class="h4 m-0">Creating Interfaces</span>
 									</a>
 								</li>
 								<li class="is-revealing">
 									<a href="#tab-3" class="tab-link">
-										<img src="dist/images/tabs-icon-03.svg" alt="Tabs icon 03">
+										<img src="/images/tabs-icon-03.svg" alt="Tabs icon 03">
 										<span class="h4 m-0">Building the product</span>
 									</a>
 								</li>
@@ -151,31 +150,7 @@
 			</section>
         </main>
 
-        <footer class="site-footer">
-            <div class="container">
-                <div class="site-footer-inner">
-                    <div class="brand footer-brand">
-                        <a href="#">
-                            <img src="dist/images/logo.svg" alt="Blue logo">
-                        </a>
-                    </div>
-                    <ul class="footer-links list-reset">
-                        <li>
-                            <a href="#">Jawami 2020</a>
-                        </li>
-                        <!-- <li>
-                            <a href="#">About us</a>
-                        </li>
-                        <li>
-                            <a href="#">FAQ's</a>
-                        </li>
-                        <li>
-                            <a href="#">Support</a>
-                        </li> -->
-                    </ul>
-                </div>
-            </div>
-        </footer>
+        <% include ../partials/footer.ejs %>
     </div>
 
     <!-- Modal -->
@@ -285,7 +260,7 @@
         </div>
     </div>
     
-    <script src="dist/js/main.min.js"></script>
-    <script src="dist/js/script.js"></script>
+    <script src="/js/main.min.js"></script>
+    <script src="/js/script.js"></script>
 </body>
 </html>
