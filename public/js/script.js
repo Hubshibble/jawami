@@ -11,9 +11,9 @@ $(document).ready(function() {
             console.log(xhttp.response);
             // }
         };
-        xhttp.open("POST", "http://localhost:3000/contact", true);
+        xhttp.open("POST", "/contact", true);
         xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-        xhttp.send(["Henry","Ford"]);
+        xhttp.send(formData);
     });
     
 });
