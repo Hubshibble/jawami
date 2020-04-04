@@ -14,7 +14,7 @@ express()
   .post('/contact', (req, res) => {
     res.setHeader('Content-Type', 'application/json');
     res.send(JSON.stringify({
-      firstName: req.body
+      data_body: req.body
     }));
 
     console.log('you posted:', req.body);
