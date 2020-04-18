@@ -163,6 +163,9 @@ $RECYCLE.BIN/
 *.msm
 *.msp
 
+# SQL files
+*.sql
+
 # Windows shortcuts
 *.lnk
 
