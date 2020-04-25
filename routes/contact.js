@@ -33,7 +33,9 @@ Router.post('/', (req, res) => {
         dbConnection.query(`INSERT INTO JawamiDB.Inquiry (ContactId, CompanyId, Service, Budget, Details, CreatedBy, ModifiedBy) VALUES ("${newContactId}", "${newCompanyId}", "${requestData.NEED}", "${requestData.CASH}", "${requestData.MORE}", "${user}", "${user}"); SELECT LAST_INSERT_ID() AS InquiryId;`,
             (err, rows, fields) => (!err) ? resolve(rows) : reject(err)
         );
-    }).then(newInquiryId => newInquiryId)));
+    }).then(newInquiryId => new Promise((resolve, reject) => {
+        dbConnection.end(err => (!err) ? resolve() : reject(err));
+    }))))
 
     result.then(x => console.log(x));
 });
