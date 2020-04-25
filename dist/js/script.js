@@ -1,7 +1,8 @@
 $(document).ready(function() {
     
     $("#submitQuoteRequest").click(function(e) {
-        console.log(e);
+        var formData = $("#contact-form").serialize();
+        console.log(formData);
         $.ajax({
             url: "",
             type: "POST",
