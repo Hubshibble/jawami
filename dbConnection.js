@@ -4,7 +4,7 @@ const mysqlConnection = mysql.createConnection({
     host: "localhost",
     user: "root",
     password: "root",
-    database: "jawamiDB",
+    database: "JawamiDB",
     port: 3306,
     multipleStatements: true
 });
