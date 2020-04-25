@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jawami</title>
+    <link href="https://fonts.googleapis.com/css?family=Oxygen:400,700|Arimo:400,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</head>
+<body class="is-boxed has-animations">
+    <div class="body-wrap boxed-container">
+        <% include ../partials/header.ejs %>
+
+        <main>
+            <section class="hero">
+				<div class="hero-left-decoration is-revealing"></div>
+				<div class="hero-right-decoration is-revealing"></div>
+                <div class="container">
+                    <div class="hero-inner">
+						<div class="hero-copy">
+	                        <h1 class="hero-title mt-0 is-revealing">Web and software development</h1>
+	                        <p class="hero-paragraph is-revealing">You need an app that has it all. The beauty and the brains.</p>
+	                        <p class="hero-cta mb-0 is-revealing">
+								<button type="button" class="button button-primary button-shadow" data-toggle="modal" data-target="#staticBackdrop">Get in touch</button>
+							</p>
+						</div>
+						<div class="hero-illustration">
+						</div>
+                    </div>
+                </div>
+            </section>
+
+			<section class="features section text-center">
+                <div class="container">
+                    <div class="features-inner section-inner has-top-divider">
+						<div class="features-header text-center">
+							<div class="container-sm">
+								<h2 class="section-title mt-0">How can we help?</h2>
+								<p class="section-paragraph mb-0">Jawami is here to help you with all of your development needs:</p>
+							</div>
+						</div>
+                        <div class="features-wrap">
+                            <div class="feature is-revealing">
+                                <div class="feature-inner">
+                                    <div class="feature-icon">
+                                        <img src="/images/feature-icon-01.svg" alt="Feature 01">
+                                    </div>
+                                    <h4 class="feature-title">Web Sites</h4>
+                                    <p class="text-sm">When you need a website, landing page, or anything in between.</p>
+                                </div>
+                            </div>
+                            <div class="feature is-revealing">
+                                <div class="feature-inner">
+                                    <div class="feature-icon">
+                                        <img src="/images/feature-icon-02.svg" alt="Feature 02">
+                                    </div>
+                                    <h4 class="feature-title">Mobile Apps</h4>
+                                    <p class="text-sm">We have you covered for all things Android, iOS, and hybrid.</p>
+                                </div>
+                            </div>
+                            <div class="feature is-revealing">
+                                <div class="feature-inner">
+                                    <div class="feature-icon">
+                                        <img src="/images/feature-icon-04.svg" alt="Feature 04">
+                                    </div>
+                                    <h4 class="feature-title">Blog & Ecommerce</h4>
+                                    <p class="text-sm">Supporting popular platforms like Wordpress, Magento, & more.</p>
+                                </div>
+                            </div>
+                            <div class="feature is-revealing">
+                                <div class="feature-inner">
+                                    <div class="feature-icon">
+                                        <img src="/images/feature-icon-03.svg" alt="Feature 03">
+                                    </div>
+                                    <h4 class="feature-title">Software</h4>
+                                    <p class="text-sm">Full stack software development with all the bells & whitsles.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+			<section class="features-tabs section">
+                <div class="container">
+                    <div class="features-tabs-inner section-inner has-top-divider">
+                        <div class="features-header text-center">
+                            <div class="container-sm">
+                                <h2 class="section-title mt-0">Trust the process</h2>
+                            </div>
+                        </div>
+						<div class="tabs-container">
+							<ul class="tabs-links">
+								<li class="is-revealing">
+									<a href="#tab-1" class="tab-link is-active">
+										<img src="/images/tabs-icon-01.svg" alt="Tabs icon 01">
+										<span class="h4 m-0">Discovery</span>
+									</a>
+								</li>
+								<li class="is-revealing">
+									<a href="#tab-2" class="tab-link">
+										<img src="/images/tabs-icon-02.svg" alt="Tabs icon 02">
+										<span class="h4 m-0">Creating Interfaces</span>
+									</a>
+								</li>
+								<li class="is-revealing">
+									<a href="#tab-3" class="tab-link">
+										<img src="/images/tabs-icon-03.svg" alt="Tabs icon 03">
+										<span class="h4 m-0">Building the product</span>
+									</a>
+								</li>
+							</ul>
+							<div class="tabs-content">
+								<div id="tab-1" class="tab-panel is-active">
+									<h2>Discover</h2>
+									<p>What are your business goals? This is the stage where we find out exactly what you're trying to accomplish.</p>
+									<p class="mb-0">We brainstorm, iron out the details, and understand your specific objectives.</p>
+								</div>
+								<div id="tab-2" class="tab-panel">
+									<h2>Design</h2>
+									<p>Using our roadmap, we need to figure out the presentation aspect.</p>
+									<p class="mb-0">Successful design happens through solid pragmatic strategy, and that's when things get really interesting.</p>
+								</div>
+								<div id="tab-3" class="tab-panel">
+									<h2>Development</h2>
+									<p>The engineering part of it all. Entrust Jawami's expertise to handle your project.</p>
+									<p class="mb-0">After drawing the roadmap and drafting the blueprints for your success, we roll up our sleeves and get to the implementation.</p>
+								</div>
+							</div>
+						</div>
+                    </div>
+                </div>
+            </section>
+
+			<section class="cta section">
+				<div class="container">
+					<div class="cta-inner section-inner is-revealing">
+						<h3 class="section-title mt-0">Get in touch today for a free quote</h3>
+						<div class="cta-cta">
+							<button type="button" class="button button-primary button-shadow" data-toggle="modal" data-target="#staticBackdrop">Tell us about your project</button>
+						</div>
+					</div>
+				</div>
+			</section>
+        </main>
+
+        <% include ../partials/footer.ejs %>
+    </div>
+
+    <!-- Modal -->
+    <% include ../partials/contactForm.ejs %>
+    
+    <script src="/js/main.min.js"></script>
+    <script src="/js/script.js"></script>
+</body>
+</html>

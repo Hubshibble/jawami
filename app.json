@@ -1,0 +1,8 @@
+{
+    "name": "Jawami Landing Page",
+    "description": "A barebones Node.js app using Express 4",
+    "repository": "https://github.com/Hubshibble/jawami",
+    "keywords": ["node", "express", "jawami", "web-development"],
+    "image": "heroku/nodejs"
+  }
+  

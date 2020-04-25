@@ -1,0 +1,104 @@
+<div class="modal fade" id="staticBackdrop" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Tell us about your project</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        </div>
+        <div class="modal-body">
+            <form id="contact-form" method="post" action="contact.php" role="form">
+                <div class="messages"></div>
+            
+                <div class="controls">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input id="form_firstname" type="text" name="firstName" class="form-control" placeholder="Firstname" required="required" data-error="Firstname is required.">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input id="form_lastname" type="text" name="lastName" class="form-control" placeholder="Lastname" required="required" data-error="Lastname is required.">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input id="form_email" type="email" name="email" class="form-control" placeholder="Email" required="required" data-error="Valid email is required.">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input id="form_phone" name="phone" class="form-control" placeholder="Phone number">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <input id="form_company" type="text" name="company" class="form-control" placeholder="Company Name" required="required" data-error="Company name is required.">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <input id="form_industry" type="text" name="industry" class="form-control" placeholder="Industry" required="required" data-error="Industry is required.">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="form_need">Interested in:</label>
+                                <select id="form_need" name="need" class="form-control" required="required" data-error="Please specify your need.">
+                                    <option value=""></option>
+                                    <option value="blog">Blog</option>
+                                    <option value="web site">Web Site</option>
+                                    <option value="mobile app">Mobile App</option>
+                                    <option value="ecommerce">Ecommerce</option>
+                                    <option value="full stack software">Full Stack Software</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="form_need">Budget:</label>
+                                <select id="form_budget" name="budget" class="form-control" required="required" data-error="Please specify your budget.">
+                                    <option value="small">$1,500 - $4,000</option>
+                                    <option value="medium">$4,000 -  $10,000</option>
+                                    <option value="large">$10,000 -  $20,000</option>
+                                    <option value="enterprise">$20,000 +</option>
+                                </select>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <textarea id="form_details" name="details" class="form-control" placeholder="Additional Details" rows="4" required="required" data-error="Please, leave us a message."></textarea>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="button button-shadow" data-dismiss="modal">Close</button>
+                    <button type="button" id="submitQuoteRequest" class="button button-primary button-shadow" data-dismiss="modal">Get Quote</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    </div>
+</div>
