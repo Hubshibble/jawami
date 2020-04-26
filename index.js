@@ -3,7 +3,6 @@ const path = require('path');
 const bodyParser = require('body-parser');
 const request = require('request');
 const https = require('https');
-const dbConnection = require('./dbConnection');
 
 const contactRoute = require('./routes/contact');
 
