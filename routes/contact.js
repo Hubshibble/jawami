@@ -1,6 +1,6 @@
 const express = require('express');
 const Router = express.Router();
-const dbConnection = require('../dbConnection');
+const mysql = require('mysql');
 
 Router.get('/', (req, res) => {
     console.log('I have been routed to /contact');
@@ -15,6 +15,20 @@ Router.get('/', (req, res) => {
 });
 
 Router.post('/', (req, res) => {
+    const mysqlConnection = mysql.createConnection({
+        host: "localhost",
+        user: "root",
+        password: "root",
+        database: "JawamiDB",
+        port: 3306,
+        multipleStatements: true
+    });
+    
+    mysqlConnection.connect((err) => {
+        if(!err) console.log("MySQL connection created successfully");
+        else console.log("MySQL connection FAILED \n", err);
+    });
+
     console.log('Making a POST request', req.body);
     const body = req.body;
     const contactData = { FNAME: body.firstName, LNAME: body.lastName, EMAIL: body.email, PHONE: body.phone };
@@ -35,7 +49,7 @@ Router.post('/', (req, res) => {
         );
     }).then(newInquiryId => new Promise((resolve, reject) => {
         dbConnection.end(err => (!err) ? resolve() : reject(err));
-    }))))
+    }))));
 
     result.then(x => console.log(x));
 });
