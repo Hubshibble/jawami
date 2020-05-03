@@ -6,7 +6,7 @@ const https = require('https');
 
 const contactRoute = require('./routes/contact');
 
-const PORT = process.env.PORT || 80;
+const PORT = process.env.PORT || 3000;
 
 const app = express();
 app.use(bodyParser.json())
